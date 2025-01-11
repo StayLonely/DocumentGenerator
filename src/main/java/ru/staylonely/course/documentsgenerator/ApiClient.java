@@ -10,7 +10,7 @@ import java.net.http.HttpResponse;
 public class ApiClient {
 
     public String generateDocument(String url, String modelUri, String topic, String temperature) throws IOException, InterruptedException {
-        // Формируем текст запроса на основе темы пользователя
+
         String prompt = topic.isEmpty() ?
                 "Сгенерируй какой-нибудь официальный документ который мог бы использоваться в любой компании на твой выбор, текст должен быть форматирован, строки должны быть внутри тега, <br> - красная строка, <n> перенос строки, <left> - текст слева, <right> - текст справа, <mid> текст по центру" :
                 "Сгенерируй официальный документ, который мог бы использоваться в компании - " + topic + ", текст должен быть форматирован, строки должны быть внутри тега, <br> - красная строка, <n> перенос строки, <left> - текст слева, <right> - текст справа, <mid> текст по центру";
