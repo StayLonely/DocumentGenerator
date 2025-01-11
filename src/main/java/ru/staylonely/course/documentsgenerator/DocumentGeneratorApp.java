@@ -182,7 +182,7 @@ public class DocumentGeneratorApp extends Application {
                 showAlert("Успех", "Документ успешно сохранён.");
             } catch (IOException e) {
                 e.printStackTrace();
-                showAlert("Ошибка", "Не удалось сохранить файл.");
+                showAlert("Ошибка", "Не удалось сохранить файл");
             }
         }
     }
